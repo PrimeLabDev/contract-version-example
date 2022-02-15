@@ -457,6 +457,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "245097e9a4535ee1e3e3931fcfcd55a796a44c643e8596ff6566d68f09b87bbc"
 
 [[package]]
+name = "contract-version"
+version = "0.0.1"
+source = "git+https://github.com/nearcomponents/contract-version.git?rev=6d452a4#6d452a4ea2d26ad1771dde1f928840c60f8efabb"
+dependencies = [
+ "near-sdk",
+ "rustc_version 0.4.0",
+]
+
+[[package]]
 name = "convert_case"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -923,8 +932,9 @@ checksum = "77f3309417938f28bf8228fcff79a4a37103981e3e186d2ccd19c74b38f4eb71"
 
 [[package]]
 name = "example-counter"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
+ "contract-version",
  "near-sdk",
  "near-sdk-sim",
 ]
