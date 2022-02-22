@@ -117,7 +117,7 @@ jobs:
           command: test
           # the jobs is optional, to reduce RAM usage
           # the --nocapture prints the tests' stdout
-          args: --jobs=2 -- --nocapture
+          args: --target=x86_64-unknown-linux-gnu --jobs=2 -- --nocapture
       # for tagged runs, create an archive releaseruns
       #
       # based on:
